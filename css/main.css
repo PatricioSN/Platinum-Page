@@ -1,0 +1,32 @@
+main{
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+
+    /**{border: solid 1px red;}*/
+}
+
+main .container{
+    display: flex;
+    justify-content: space-around;
+
+
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    div{
+        border: solid 2px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.08);
+
+        padding: 10px;
+
+        h3{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

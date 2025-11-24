@@ -3,13 +3,12 @@ header{
     margin: 0;
 }
 
-.container{
+header .container{
     display: flex;
     padding: 5px;
     background-color: #959494;
     align-items: center;
     justify-content: space-between ;
-
 }
 
 .menu{
@@ -102,12 +101,11 @@ header{
     text-align: center;
 }
 
-.banner-text h1, h3{
+.banner-text h1, .banner-text h3{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 
     text-shadow: 3px 3px 4px black;
-    color: #959494;
 
     margin: 0;
     padding: 0;
@@ -115,10 +113,14 @@ header{
 
 .banner-text h1{
     font-size: 50px;
+    color: var(--cor-principal);
 }
 
 .banner-text h3{
     font-size: 22px;
+    color: var(--cor-secundaria);
+
+    text-shadow: 1px 1px 10px white;
 }
 
 
