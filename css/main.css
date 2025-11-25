@@ -11,44 +11,25 @@ main{
 
 .card{
     width: 320px;
+    height: 350px;
     background: rgba(0,0,0,0.08);
     border: solid 2px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
-    transition: background 0.3s;
 }
 
-.card summary{
+.card div{
         font-size: 20px;
         font-weight: bold;
         list-style: none;
 }
 
-.card[open] summary h3{
-    display: none;
-}
-
-.card[open] summary p{
-    display: none;
-}
-
-.card summary p{
+.card div p{
     font-size: 15px;
 }
 
-.card > p{
-    display: none;
-}
-
-.card[open] > p{
-    display: block;
-}
-
-.card:hover{
-    background: rgba(0,0,0,0.15);
-}
 
 main .container{
     display: grid;
@@ -63,3 +44,41 @@ main .container{
         border-radius: 10px;
     }
 }
+
+
+.card{
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back p:last-child {
+    margin-top: auto;
+    translate: 0 -50px;
+}
+
+
