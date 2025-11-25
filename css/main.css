@@ -7,8 +7,6 @@ main{
             margin-top: 15px;
             margin-bottom: 15px;
     }
-
-    /**{border: solid 1px red;}*/
 }
 
 .card{
@@ -20,16 +18,20 @@ main{
     cursor: pointer;
     overflow: hidden;
     transition: background 0.3s;
+}
 
-    summary{
+.card summary{
         font-size: 20px;
         font-weight: bold;
         list-style: none;
-    }
+}
 
-    [open]{
-        background: #222;
-    }
+.card[open]{
+        background: rgba(0,0,0,0.25);
+}
+
+.card:hover{
+    background: rgba(0,0,0,0.15);
 }
 
 main .container{
