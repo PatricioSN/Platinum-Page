@@ -26,8 +26,24 @@ main{
         list-style: none;
 }
 
-.card[open]{
-        background: rgba(0,0,0,0.25);
+.card[open] summary h3{
+    display: none;
+}
+
+.card[open] summary p{
+    display: none;
+}
+
+.card summary p{
+    font-size: 15px;
+}
+
+.card > p{
+    display: none;
+}
+
+.card[open] > p{
+    display: block;
 }
 
 .card:hover{
