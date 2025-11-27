@@ -15,16 +15,39 @@ footer .container{
     overflow: hidden;
 
     padding: 0 150px;
-
-    div{border: 1px solid red;}
 }
 
-footer .container p{
-    
+footer .container p:not(:first-child):hover{
+    color: white;
+    cursor: pointer;
 }
 
 footer .container p:first-child{
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+#contact div{
+    border-bottom: 1px solid white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 0 0 6px 0;
+
+    img{
+        width: 25px;
+        height: 25px;
+
+        margin: 3px;
+
+        transition: transform 0.3s ease;
+    }
+}
+
+#contact div img:hover{
+    cursor: pointer;
+
+    transform: scale(1.2);
 }
 
