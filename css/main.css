@@ -81,4 +81,8 @@ main .container{
     translate: 0 -50px;
 }
 
+ul li{
+    font-size: 15px;
+    margin-left: 1.7lh;
+}
 
